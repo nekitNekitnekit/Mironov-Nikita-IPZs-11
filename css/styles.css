@@ -15,12 +15,25 @@ body {
     letter-spacing: 0.02em;
 }
 
-.list {
+.header_nav_list {
     list-style: none;
+
 }
 
-.link {
+.header_nav_link {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--black);
     text-decoration: none;
+}
+
+.header_nav_link:hover,
+.header_nav_link:focus {
+    color: var(--brand-color);
+
 }
 
 ul {
@@ -44,31 +57,20 @@ ul {
     color: var(--black);
 }
 
-.header-nav__link {
-    color: var(--black);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.header-nav__link:hover,
-.header-nav__link:focus {
-    color: var(--brand-color);
-}
-
-.header-contacts {
+.header_contacts {
     font-style: normal;
 }
 
-.header-contacts__link {
+.header_contacts_link {
     color: var(--gray);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    text-decoration: none;
 }
 
-.header-contacts__link:hover,
-.header-contacts__link:focus {
+.header_contacts_link:hover,
+.header_contacts_link:focus {
     color: var(--brand-color);
 }
 
@@ -82,7 +84,7 @@ ul {
     background-color: var(--black_gray);
 }
 
-.hero__title {
+.hero_title {
     color: var(--white);
     font-weight: 700;
     font-size: 56px;
@@ -91,7 +93,7 @@ ul {
     text-align: center;
 }
 
-.hero__button {
+.hero_button {
     color: var(--white);
     background-color: var(--brand-color);
     font-family: 'Roboto', sans-serif;
@@ -107,12 +109,12 @@ ul {
     cursor: pointer;
 }
 
-.hero__button:hover,
-.hero__button:focus {
+.hero_button:hover,
+.hero_button:focus {
     background-color: var(--brand-color_hover);
 }
 
-.company__title {
+.company_title {
     color: var(--black);
     font-weight: 700;
     font-size: 16px;
@@ -121,14 +123,14 @@ ul {
     text-transform: uppercase;
 }
 
-.company__text {
+.company_text {
     color: var(--gray);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.works__title {
+.works_title {
     color: var(--black);
     font-weight: 700;
     font-size: 36px;
@@ -140,7 +142,7 @@ ul {
     background-color: var(--white_gray);
 }
 
-.team__title {
+.team_title {
     color: var(--black);
     font-weight: 700;
     font-size: 36px;
@@ -149,15 +151,15 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.team__list {
+.team_list {
     background-color: var(--white);
 }
 
-.team__item {
+.team_item {
     background-color: var(--white);
 }
 
-.team__specialist {
+.team_specialist {
     color: var(--black);
     font-weight: 500;
     font-size: 20px;
@@ -165,7 +167,7 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.team__job-title {
+.team_job_title {
     color: var(--gray);
     font-weight: 400;
     font-size: 16px;
