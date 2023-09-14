@@ -126,6 +126,10 @@ body {
     text-transform: capitalize;
 }
 
+.team {
+    background-color: var(--white_gray);
+}
+
 .team__title {
     color: var(--black);
     font-weight: 700;
