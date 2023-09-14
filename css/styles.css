@@ -17,7 +17,6 @@ body {
 
 .header_nav_list {
     list-style: none;
-
 }
 
 .header_nav_link {
@@ -234,7 +233,7 @@ ul {
 
 /* Сторінка портфоліо */
 
-.gallery-filter__button {
+.gallery_filter_button {
     color: var(--black);
     background-color: var(--white_gray);
     font-family: 'Roboto', sans-serif;
@@ -245,13 +244,13 @@ ul {
     cursor: pointer;
 }
 
-.gallery-filter__button:hover,
-.gallery-filter__button:focus {
+.gallery_filter_button:hover,
+.gallery_filter_button:focus {
     color: var(--white);
     background-color: var(--brand-color);
 }
 
-.gallery__title {
+.gallery_title {
     color: var(--black);
     font-weight: 500;
     font-size: 20px;
@@ -259,7 +258,7 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.gallery__text {
+.gallery_text {
     color: var(--gray);
     font-weight: 400;
     font-size: 16px;
