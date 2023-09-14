@@ -23,10 +23,6 @@ body {
     text-decoration: none;
 }
 
-.current {
-    color: var(--brand-color);
-}
-
 ul {
     list-style: none;
 }
@@ -73,6 +69,10 @@ ul {
 
 .header-contacts__link:hover,
 .header-contacts__link:focus {
+    color: var(--brand-color);
+}
+
+.active {
     color: var(--brand-color);
 }
 
