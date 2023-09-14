@@ -23,8 +23,6 @@ body {
     text-decoration: none;
 }
 
-/* Сторінка студії */
-
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -69,6 +67,8 @@ body {
 .header-contacts__link:focus {
     color: var(--brand-color);
 }
+
+/* Сторінка студії */
 
 .hero {
     background-color: var(--black_gray);
