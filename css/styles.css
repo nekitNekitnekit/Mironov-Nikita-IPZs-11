@@ -233,35 +233,50 @@ ul {
 
 /* Сторінка портфоліо */
 
-.gallery_filter_button {
-    color: var(--black);
-    background-color: var(--white_gray);
+.menu_button {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    line-height: 2.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    background-color: var(--white_gray);
+    border-radius: 4px;
+}
+
+.menu_button:focus,
+.menu_button:hover {
+    color: var(--white);
+    background-color: var(--brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.section_button,
+.menu_button {
     cursor: pointer;
 }
 
-.gallery_filter_button:hover,
-.gallery_filter_button:focus {
-    color: var(--white);
-    background-color: var(--brand-color);
+.section_button {
+    border: none;
+    background-color: var(--white);
 }
 
-.gallery_title {
+.section_description {
+    font-size: 18px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
     color: var(--black);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
 }
 
-.gallery_text {
-    color: var(--gray);
-    font-weight: 400;
+a {
+    text-decoration: none;
+}
+
+.section_text {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--gray);
 }
