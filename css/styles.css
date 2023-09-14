@@ -32,7 +32,7 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     text-decoration: none;
 }
 
@@ -97,8 +97,10 @@ ul {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    line-height: 2.875;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
