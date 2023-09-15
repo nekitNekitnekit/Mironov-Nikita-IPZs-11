@@ -14,12 +14,12 @@ body {
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: Raleway;
     font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.06em;
-    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
 }
 
 .web {
@@ -35,12 +35,12 @@ body {
 }
 
 .header_nav_link {
+    font-size: 14px;
+    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: normal;
+    letter-spacing: 0.28px;
     color: var(--black);
-    text-decoration: none;
 }
 
 .header_nav_link:hover,
@@ -58,10 +58,11 @@ ul {
 
 .header_contacts_link {
     color: var(--gray);
+    font-size: 14px;
+    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-decoration: none;
+    line-height: normal;
+    letter-spacing: 0.28px;
 }
 
 .header_contacts_link:hover,
@@ -85,24 +86,26 @@ ul {
 
 .hero_title {
     color: var(--white);
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
     text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
 }
 
 .hero_button {
     color: var(--white);
     background-color: var(--brand-color);
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 2.875;
-    align-items: center;
+    line-height: 30px;
+    font-style: normal;
     text-align: center;
-    letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.96px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -115,25 +118,30 @@ ul {
 
 .company_title {
     color: var(--black);
+    font-size: 14px;
+    font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: normal;
+    letter-spacing: 0.42px;
     text-transform: uppercase;
 }
 
 .company_text {
     color: var(--gray);
+    font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 
 .works_title {
     color: var(--black);
-    font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
     text-align: center;
 }
 
@@ -143,11 +151,12 @@ ul {
 
 .team_title {
     color: var(--black);
-    font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
     text-align: center;
-    letter-spacing: 0.02em;
 }
 
 .team_list {
@@ -160,17 +169,22 @@ ul {
 
 .team_specialist {
     color: var(--black);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: normal;
+    letter-spacing: 0.48px;
 }
 
 .team_job_title {
     color: var(--gray);
-    font-weight: 400;
+    text-align: center;
     font-size: 16px;
-    line-height: 1.5;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
 }
 
 .footer {
@@ -189,11 +203,10 @@ ul {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7142;
-    letter-spacing: 0.03em;
-    color: var(--white);
-    text-decoration: none;
     font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0.42px;
+    color: var(--white);
 }
 
 .footer_address:hover,
@@ -204,11 +217,10 @@ ul {
 .footer_tel {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.1742;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
     font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0.42px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer_tel:hover,
@@ -219,11 +231,10 @@ ul {
 .footer_mail {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.1742;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
     font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0.42px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer_mail:hover,
