@@ -2,6 +2,7 @@
     --brand-color: #2196F3;
     --brand-color_hover: #188ce8;
     --black: #000000;
+    --black_lighter: #212121;
     --gray: #757575;
     --white: #FFFFFF;
     --black_gray: #2F303A;
@@ -10,15 +11,17 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
     background-color: var(--white);
 }
 
 .logo {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
@@ -35,12 +38,10 @@ body {
 }
 
 .header_nav_link {
-    font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 171.429%;
     letter-spacing: 0.28px;
-    color: var(--black);
+    color: var(--black_lighter);
 }
 
 .header_nav_link:hover,
@@ -52,16 +53,14 @@ ul {
     list-style: none;
 }
 
-.header_contacts {
+.header_contacts,
+.contact_info_list {
     font-style: normal;
 }
 
 .header_contacts_link {
     color: var(--gray);
-    font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.28px;
 }
 
@@ -97,9 +96,8 @@ ul {
     color: var(--white);
     text-align: center;
     font-size: 44px;
-    font-style: normal;
     font-weight: 900;
-    line-height: 60px;
+    line-height: 136.364%;
     letter-spacing: 2.64px;
     text-transform: uppercase;
 }
@@ -107,11 +105,9 @@ ul {
 .hero_button {
     color: var(--white);
     background-color: var(--brand-color);
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    font-style: normal;
+    line-height: 187.5%;
     text-align: center;
     letter-spacing: 0.96px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -126,30 +122,22 @@ ul {
 }
 
 .company_title {
-    color: var(--black);
-    font-size: 14px;
-    font-style: normal;
+    color: var(--black_lighter);
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
 
 .company_text {
     color: var(--gray);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+    line-height: 171.429%;
     letter-spacing: 0.42px;
 }
 
 .works_title {
-    color: var(--black);
+    color: var(--black_lighter);
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.08px;
     text-align: center;
 }
@@ -159,11 +147,9 @@ ul {
 }
 
 .team_title {
-    color: var(--black);
+    color: var(--black_lighter);
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.08px;
     text-align: center;
 }
@@ -177,12 +163,10 @@ ul {
 }
 
 .team_specialist {
-    color: var(--black);
+    color: var(--black_lighter);
     text-align: center;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.48px;
 }
 
@@ -190,9 +174,6 @@ ul {
     color: var(--gray);
     text-align: center;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.48px;
 }
 
@@ -209,11 +190,7 @@ ul {
 }
 
 .footer_address {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 16px;
+    line-height: 114.286%;
     letter-spacing: 0.42px;
     color: var(--white);
 }
@@ -224,10 +201,7 @@ ul {
 }
 
 .footer_tel {
-    font-weight: 400;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 16px;
+    line-height: 114.286%;
     letter-spacing: 0.42px;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -238,10 +212,7 @@ ul {
 }
 
 .footer_mail {
-    font-weight: 400;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 16px;
+    line-height: 114.286%;
     letter-spacing: 0.42px;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -254,11 +225,9 @@ ul {
 /* Сторінка портфоліо */
 
 .menu_button {
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    font-style: normal;
-    line-height: 26px;
+    line-height: 162.5%;
     text-align: center;
     letter-spacing: 0.48px;
     border: none;
@@ -286,11 +255,10 @@ ul {
 
 .section_description {
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 200%;
     letter-spacing: 1.08px;
-    color: var(--black);
+    color: var(--black_lighter);
 }
 
 a {
@@ -299,9 +267,7 @@ a {
 
 .section_text {
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+    line-height: 187.5%;
     letter-spacing: 0.48px;
     color: var(--gray);
 }
