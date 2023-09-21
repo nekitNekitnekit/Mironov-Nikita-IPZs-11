@@ -18,6 +18,10 @@ body {
     background-color: var(--white);
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -51,6 +55,8 @@ body {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
