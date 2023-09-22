@@ -36,15 +36,14 @@ img {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .header {
-    display: flex;
+    display: block;
     border-bottom: 1px solid var(--gray_border);
-    height: 80px;
 }
 
 .header_container,
@@ -66,9 +65,16 @@ img {
     letter-spacing: 0.78px;
 
     display: block;
+    margin-right: 93px;
+}
+
+.logo_header {
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
+}
+
+.logo_footer {
+    margin-bottom: 28px;
 }
 
 .web {
@@ -81,7 +87,6 @@ img {
 
 .header_nav_list {
     list-style: none;
-    padding: 32px 0;
     gap: 50px;
 }
 
@@ -91,6 +96,8 @@ img {
     letter-spacing: 0.28px;
     color: var(--black_lighter);
     transition: color 300ms ease-in-out;
+
+    padding: 32px 0;
 }
 
 .header_nav_link:hover,
@@ -107,7 +114,6 @@ ul {
 .header_contacts {
     font-style: normal;
     margin-left: auto;
-    padding: 32px 0;
     gap: 40px;
 }
 
@@ -120,6 +126,8 @@ ul {
     font-weight: 500;
     letter-spacing: 0.28px;
     transition: color 300ms ease-in-out;
+
+    padding: 32px 0;
 }
 
 .header_contacts_link:hover,
@@ -163,7 +171,7 @@ ul {
     letter-spacing: 2.64px;
     text-transform: uppercase;
 
-    width: 696px;
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -183,10 +191,8 @@ ul {
     cursor: pointer;
     transition: background-color 300ms ease-in-out;
 
-    width: 200px;
     height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 24px 10px 24px;
 }
 
 .hero_button:hover,
@@ -215,7 +221,7 @@ ul {
     line-height: 171.43%;
     letter-spacing: 0.42px;
 
-    width: 270px;
+    max-width: 270px;
 }
 
 .works_title {
@@ -296,8 +302,8 @@ ul {
     list-style: none;
 }
 
-.contact_info_item {
-    margin: 12px 0;
+.contact_info_item:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .footer_address {
@@ -343,6 +349,8 @@ ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
+
+    margin-bottom: 50px;
 }
 
 .menu_button {
@@ -356,7 +364,6 @@ ul {
     border-radius: 4px;
     transition: color 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
 
-    margin-bottom: 50px;
     padding: 6px 22px 6px 22px;
 }
 
@@ -407,12 +414,17 @@ a {
 .projects_item {
     background-color: var(--white);
     border: 1px solid #eeeeee;
-    border-radius: 0px 0px 4px 4px;
 
     width: calc((100% - 60px) / 3);
 }
 
+.projects_item:focus,
+.projects_item:hover {
+    background-color: var(--white);
+    border: 1px solid #eeeeee;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .project_p {
     padding: 20px 24px;
-    border: solid 1px #eeeeee;
 }
