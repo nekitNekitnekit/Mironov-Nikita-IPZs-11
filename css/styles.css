@@ -155,12 +155,17 @@ ul {
 /* Сторінка студії */
 
 .hero {
-    background-color: var(--black_gray);
     height: 600px;
     padding-top: 200px;
     padding-bottom: 280px;
     text-align: center;
 }
+
+.hero_image {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/hero_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 .hero_title {
     color: var(--white);
