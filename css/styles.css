@@ -236,6 +236,32 @@ ul {
     max-width: 270px;
 }
 
+/*.company_list:not(:last-child) {
+    margin-right: 30px;
+}*/
+
+/*.company_list {
+    display: flex;
+    margin-right: var(--neg-card-interval);
+}*/
+
+/*.company li{
+    flex-basis: calc((100% - 120px)/4);
+    margin-right: var(--card-interval);
+}*/
+
+.icon_features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    
+    background-color: var(--white_gray);
+    border-radius: 4px;
+}
+
 .works_title {
     color: var(--black_lighter);
     font-size: 36px;
@@ -330,6 +356,50 @@ a.social:focus {
     background-color: var(--brand-color);
     color: var(--white);
     outline: none;
+}
+
+.clients_title {
+    color: var(--black_lighter);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+
+    margin-bottom: 50px;
+}
+
+.clients .list {
+    display: flex;
+    margin-right: var(--neg-card-interval);
+}
+
+.client_card {
+    display: flex;
+    flex-basis: calc(100%/6);
+    margin-right: var(--card-interval);   
+}
+
+.client_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    padding: 19px;
+    color: var(--icon-color);
+    border: 1px solid currentColor;
+    border-radius: var(--border-r);
+}
+
+.client_link:hover,
+.client_link:focus{
+    color: var(--brand-color);
+    outline: none;
+}
+
+.client_logo {
+    display: block;
+    fill: currentColor;
 }
 
 .footer {
