@@ -339,6 +339,28 @@ ul {
 .works_list {
     display: flex;
     gap: 30px;
+    
+}
+
+.work_foto {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+}
+
+.foto_description {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: var(--black_gray);
+    opacity: 0.8;
+
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: var(--white);
 }
 
 .team {
