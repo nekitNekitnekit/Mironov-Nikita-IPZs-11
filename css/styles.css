@@ -700,3 +700,38 @@ a {
 .project_p {
     padding: 20px 24px;
 }
+
+.project_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.text_section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    opacity: 0.9;
+    transition-property: transform;
+}
+
+.projects_item:hover .text_section {
+    transform: translateY(0);
+}
+
+.projects_item:focus .text_section {
+    transform: translateY(0);
+}
+
+
+.text {
+    font-size: 18px;
+    line-height: 155.56%;
+    letter-spacing: 0.54px;
+    color: var(--white);
+    padding: 63px 24px;
+    background-color: var(--brand-color);
+    opacity: 0.9;
+}
