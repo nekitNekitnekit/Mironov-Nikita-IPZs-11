@@ -96,9 +96,13 @@ img {
     line-height: 171.43%;
     letter-spacing: 0.28px;
     color: var(--black_lighter);
-    transition: color 300ms ease-in-out;
+    /*transition: color 300ms ease-in-out;*/
 
     padding: 32px 0;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_nav_link:hover,
@@ -120,8 +124,17 @@ ul {
 
 .header_contacts .icon {
     margin-right: 10px;
-    align-self: center;
-    fill:currentColor;
+    fill: currentColor;
+}
+
+.icon_mail {
+    width: 16px;
+    height: 12px;
+}
+
+.icon_phone {
+    width: 10px;
+    height: 16px;
 }
 
 .contact_info_list {
@@ -129,12 +142,18 @@ ul {
 }
 
 .header_contacts_link {
+    display: inline-flex;
+    align-items: center;
     color: var(--gray);
     font-weight: 500;
     letter-spacing: 0.28px;
-    transition: color 300ms ease-in-out;
+    /*transition: color 300ms ease-in-out;*/
 
     padding: 32px 0;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_contacts_link:hover,
@@ -144,6 +163,21 @@ ul {
 
 .active {
     color: var(--brand-color);
+}
+
+.header_nav_list .header_nav_link {
+    position: relative;
+}
+
+.header_nav_list .header_nav_link.active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -1px;
+    background-color: var(--brand-color);
 }
 
 .hide {
@@ -162,9 +196,9 @@ ul {
 /* Сторінка студії */
 
 .hero {
-    height: 600px;
+    background-color: var(--black_gray);
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
@@ -172,7 +206,7 @@ ul {
     background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/hero_bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
 
 .hero_title {
     color: var(--white);
@@ -201,15 +235,74 @@ ul {
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    transition: background-color 300ms ease-in-out;
+    /*transition: background-color 300ms ease-in-out;*/
 
     height: 50px;
     padding: 10px 24px 10px 24px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero_button:hover,
 .hero_button:focus {
     background-color: var(--brand-color_hover);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--white);
+    opacity: 1;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_button {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.modal_icon {
+    width: 18px;
+    height: 18px;
+    fill: var(--black);
 }
 
 .company_title {
@@ -243,7 +336,7 @@ ul {
 
     padding: 25px 100px;
     margin-bottom: 30px;
-    
+
     background-color: var(--white_gray);
     border-radius: 4px;
 }
@@ -261,6 +354,28 @@ ul {
 .works_list {
     display: flex;
     gap: 30px;
+
+}
+
+.work_foto {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+}
+
+.foto_description {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: var(--black_gray);
+    opacity: 0.8;
+
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: var(--white);
 }
 
 .team {
@@ -331,11 +446,15 @@ ul {
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+
     border-radius: 50%;
     color: var(--icon_color);
     fill: currentColor;
-    transition: all 300ms ease-in-out;
+    /*transition: all 300ms ease-in-out;*/
+
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a.social:hover,
@@ -364,24 +483,29 @@ a.social:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    
+    max-width: 170px;
+    max-height: 92px;
+
     padding: 16px 32px;
     color: var(--icon_color);
     border: 1px solid currentColor;
     border-radius: 4px;
-    transition: all 300ms ease-in-out;
+    /*transition: all 300ms ease-in-out;*/
+
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client_link:hover,
-.client_link:focus{
+.client_link:focus {
     color: var(--brand-color);
     outline: none;
 }
 
 .client_logo {
     display: block;
-    fill: currentColor;    
+    fill: currentColor;
 }
 
 .footer {
@@ -420,7 +544,11 @@ a.social:focus {
     line-height: 114.29%;
     letter-spacing: 0.42px;
     color: var(--white);
-    transition: color 300ms ease-in-out;
+    /*transition: color 300ms ease-in-out;*/
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_address:hover,
@@ -432,7 +560,11 @@ a.social:focus {
     line-height: 114.29%;
     letter-spacing: 0.42px;
     color: rgba(255, 255, 255, 0.6);
-    transition: color 300ms ease-in-out;
+    /*transition: color 300ms ease-in-out;*/
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_tel:hover,
@@ -444,7 +576,11 @@ a.social:focus {
     line-height: 114.29%;
     letter-spacing: 0.42px;
     color: rgba(255, 255, 255, 0.6);
-    transition: color 300ms ease-in-out;
+    /*transition: color 300ms ease-in-out;*/
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_mail:hover,
@@ -463,6 +599,7 @@ a.social:focus {
 .footer .social_networks li {
     margin-right: 10px;
 }
+
 .footer .social {
     background-color: rgba(255, 255, 255, 0.10);
     color: var(--white);
@@ -488,9 +625,13 @@ a.social:focus {
     border: none;
     background-color: var(--white_gray);
     border-radius: 4px;
-    transition: color 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    /*transition: color 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;*/
 
     padding: 6px 22px 6px 22px;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu_button:focus,
@@ -542,7 +683,11 @@ a {
     border: 1px solid #eeeeee;
 
     width: calc((100% - 60px) / 3);
-    transition: box-shadow 300ms ease-in-out;
+    /*transition: box-shadow 300ms ease-in-out;*/
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects_item:focus,
@@ -554,4 +699,39 @@ a {
 
 .project_p {
     padding: 20px 24px;
+}
+
+.project_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.text_section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    opacity: 0.9;
+    transition-property: transform;
+}
+
+.projects_item:hover .text_section {
+    transform: translateY(0);
+}
+
+.projects_item:focus .text_section {
+    transform: translateY(0);
+}
+
+
+.text {
+    font-size: 18px;
+    line-height: 155.56%;
+    letter-spacing: 0.54px;
+    color: var(--white);
+    padding: 63px 24px;
+    background-color: var(--brand-color);
+    opacity: 0.9;
 }
