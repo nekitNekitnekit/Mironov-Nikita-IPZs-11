@@ -297,12 +297,38 @@ ul {
     background-color: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_icon {
     width: 18px;
     height: 18px;
-    fill: var(--black);
+    color: var(--black);
+    /*fill: var(--black);*/
+    fill: currentColor;
+
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_button:hover,
+.modal_button:focus {
+    background-color: var(--brand-color);
+}
+
+/*.modal_icon:hover,
+.modal_icon:focus {
+    background-color: var(--brand-color);
+    color: var(--white);
+}*/
+
+.modal_button:hover .modal_icon,
+.modal_button:focus .modal_icon {
+    color: var(--white);
 }
 
 .company_title {
