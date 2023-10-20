@@ -545,7 +545,8 @@ a.social:focus {
     align-items: baseline;
 }
 
-.join_subtitle {
+.join_subtitle,
+.footer_form_text {
     color: var(--white);
     font-weight: 700;
     letter-spacing: 0.42px;
@@ -617,6 +618,81 @@ a.social:focus {
 .footer .social {
     background-color: rgba(255, 255, 255, 0.10);
     color: var(--white);
+}
+
+.footer_form {
+    flex-grow: 1;
+    margin-left: 94px;
+}
+
+.form_subscribe {
+    display: flex;
+}
+
+.form_subscribe input {
+    padding-left: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.footer_input {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.48px;
+
+    max-height: 50px;
+    border-radius: 4px;
+    background-color: rgba(33, 150, 243, 0.00);
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white);
+}
+
+.footer_input:focus {
+    outline: 1px solid var(--brand-color);
+}
+
+
+.footer_subscribe_button {
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187.5%;
+    letter-spacing: 0.96px;
+    color: var(--white);
+    background: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    display: inline;
+    align-items: center;
+    min-width: 200px;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 28px;
+    position: relative;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer_subscribe_button:hover,
+.footer_subscribe_button:focus {
+    background-color: var(--brand-color_hover);
+}
+
+.footer_form_icon {
+    position: absolute;
+    fill: var(--white);
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    top: 12px;
 }
 
 /* Сторінка портфоліо */
