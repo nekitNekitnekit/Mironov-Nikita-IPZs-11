@@ -319,10 +319,8 @@ ul {
     color: var(--brand-color);
 }
 
-.form_modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form {
+    padding: 40px;
 }
 
 .modal_title {
@@ -331,13 +329,10 @@ ul {
     text-align: center;
     letter-spacing: 0.6px;
     color: var(--black_lighter);
-    margin-top: 40px;
     margin-bottom: 12px;
 }
 
 .modal_contacts {
-    display: flex;
-    flex-direction: column;
     max-width: 448px;
 }
 
@@ -365,8 +360,9 @@ ul {
 }
 
 .modal_input {
-    min-height: 40px;
-    min-width: 448px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 
@@ -416,7 +412,7 @@ ul {
 }
 
 .text_label {
-    display: flex;
+    display: inline-block;
     font-size: 12px;
     letter-spacing: 0.12px;
     color: var(--gray);
@@ -424,24 +420,21 @@ ul {
 }
 
 .modal_checkbox {
-    display: flex;
     margin-top: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 .argee_label {
     display: flex;
+    justify-content: center;
     align-items: center;
     line-height: 171.43%;
     letter-spacing: 0.42px;
     color: var(--gray);
+    cursor: pointer;
 }
 
 .argee_label span {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 16px;
     height: 15px;
     border: 2px solid var(--black);
@@ -485,12 +478,10 @@ ul {
     border: none;
     cursor: pointer;
 
-    display: inline;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    min-width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 52px 10px 52px;
     margin-top: 30px;
 
     transition-property: background-color;
@@ -854,7 +845,6 @@ a.social:focus {
     display: inline;
     align-items: center;
     min-width: 200px;
-    min-height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 28px;

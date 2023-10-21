@@ -433,42 +433,44 @@
          </div>
       </div>
     </footer>
-
+    <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal >
       <div class="modal"> 
           <button type="button" class="modal_button" data-modal-close> <svg class="modal_icon">
               <use href="./images/svg/icons.svg#icon-close"></use></svg></button>
-              <p class="modal_title"> Залиште свої дані, ми вам передзвонимо</p>
-              <form class="form_modal">     
-                <div class="modal_contacts">     
+              <div class="form">
+                <p class="modal_title"> Залиште свої дані, ми вам передзвонимо</p>
+                <form class="form_modal">     
+                  <div class="modal_contacts">     
+                    <div class="list_modal">
+                      <label for="name" class="text_label">Ім'я</label>
+                    <input type="text" name="name" id="name" class="modal_input" required placeholder=""> <svg class="list_icon">
+                      <use href="./images/svg/icons.svg#icon-person-mod"></use>
+                    </svg></div>
+                  <div class="list_modal"> 
+                    <label for="tel" class="text_label">Телефон</label>
+                      <input type="tel" name="tel" id="tel" class="modal_input" required placeholder=""><svg class="list_icon">
+                        <use href="./images/svg/icons.svg#icon-phone-mod"></use>
+                    </svg></div>
                   <div class="list_modal">
-                    <label for="name" class="text_label">Ім'я</label>
-                  <input type="text" name="name" id="name" class="modal_input" required placeholder=""> <svg class="list_icon">
-                    <use href="./images/svg/icons.svg#icon-person-mod"></use>
-                  </svg></div>
-                <div class="list_modal"> 
-                  <label for="tel" class="text_label">Телефон</label>
-                    <input type="tel" name="tel" id="tel" class="modal_input" required placeholder=""><svg class="list_icon">
-                      <use href="./images/svg/icons.svg#icon-phone-mod"></use>
-                  </svg></div>
-                <div class="list_modal">
-                  <label for="mail" class="text_label">Пошта</label>
-                    <input type="email" name="mail" id="mail" class="modal_input" required placeholder=""><svg class="list_icon">
-                      <use href="./images/svg/icons.svg#icon-mail-mod"></use>
-                  </svg></div>         
-                <div class="modal_comment">
-                  <label for="comment" class="text_label" class="modal_smth">Коментар</label>
-                    <textarea name="comment" id="text" placeholder="Введіть текст" class="modal_textarea"></textarea></div>
-                </div>
-                <div class="modal_checkbox">
-                  <input type="checkbox" name="agree" value="agree" id="agree" class="modal_check hide" required>
-                    <label for="agree" class="argee_label">
-                      <span><svg class="check_icon">
-                        <use href="./images/svg/icons.svg#icon-check"></use>
-                    </svg></span> Погоджуюся з розсилкою та приймаю <a href="#" class="modal_link"> Умови договору</a> </label> </div>
-                <button type="submit" class="modal_send">Відправити</button>
-          </div>
+                    <label for="mail" class="text_label">Пошта</label>
+                      <input type="email" name="mail" id="mail" class="modal_input" required placeholder=""><svg class="list_icon">
+                        <use href="./images/svg/icons.svg#icon-mail-mod"></use>
+                    </svg></div>         
+                  <div class="modal_comment">
+                    <label for="comment" class="text_label" class="modal_smth">Коментар</label>
+                      <textarea name="comment" id="text" placeholder="Введіть текст" class="modal_textarea"></textarea></div>
+                  </div>
+                  <div class="modal_checkbox">
+                    <input type="checkbox" name="agree" value="agree" id="agree" class="modal_check hide" required>
+                      <label for="agree" class="argee_label">
+                        <span><svg class="check_icon">
+                          <use href="./images/svg/icons.svg#icon-check"></use>
+                      </svg></span> Погоджуюся з розсилкою та приймаю <a href="#" class="modal_link"> Умови договору</a> </label> </div>
+                  <input type="submit" class="modal_send" value="Відправити"></input>
+            </div>
           </form>
+        </div>
       </div>
     </div>
    
