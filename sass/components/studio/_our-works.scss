@@ -1,0 +1,36 @@
+.works__title {
+    color: var(--black_lighter);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.works__list {
+    display: flex;
+    gap: 30px;
+
+}
+
+.work__foto {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+}
+
+.foto__description {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: var(--black_gray);
+    opacity: 0.8;
+
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: var(--white);
+}

@@ -1,0 +1,26 @@
+.features__list {
+    background-color: var(--white);
+    display: flex;
+    padding-top: 94px;
+    gap: 30px;
+}
+
+.features__text {
+    color: var(--gray);
+    line-height: 171.43%;
+    letter-spacing: 0.42px;
+
+    max-width: 270px;
+}
+
+.icon__features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 100px;
+    margin-bottom: 30px;
+
+    background-color: var(--white_gray);
+    border-radius: 4px;
+}
