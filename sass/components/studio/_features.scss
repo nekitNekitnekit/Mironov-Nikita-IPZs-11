@@ -1,8 +1,21 @@
+section.features {
+    padding-top: 94px;
+    padding-bottom: 0px;
+}
+
 .features__list {
     background-color: var(--white);
     display: flex;
-    padding-top: 94px;
     gap: 30px;
+}
+
+.features__title {
+    color: var(--black_lighter);
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
 .features__text {
@@ -13,7 +26,7 @@
     max-width: 270px;
 }
 
-.icon__features {
+.features__icon {
     display: flex;
     justify-content: center;
     align-items: center;

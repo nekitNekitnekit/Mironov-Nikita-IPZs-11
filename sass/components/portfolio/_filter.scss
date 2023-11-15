@@ -1,4 +1,4 @@
-.menu__filter {
+.filter__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     margin-bottom: 50px;
 }
 
-.menu__button {
+.filter__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 162.5%;
@@ -24,8 +24,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu__button:focus,
-.menu__button:hover {
+.filter__button:focus,
+.filter__button:hover {
     color: var(--white);
     background-color: var(--brand-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);

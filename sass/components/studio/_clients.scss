@@ -8,12 +8,12 @@
     margin-bottom: 50px;
 }
 
-.clients .list {
+.clients__list {
     display: flex;
     gap: 30px;
 }
 
-.client__link {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,13 +30,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:hover,
-.client__link:focus {
+.clients__link:hover,
+.clients__link:focus {
     color: var(--brand-color);
     outline: none;
 }
 
-.client__logo {
+.clients__logo {
     display: block;
     fill: currentColor;
 }

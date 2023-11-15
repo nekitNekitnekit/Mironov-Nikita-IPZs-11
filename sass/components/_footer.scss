@@ -12,7 +12,7 @@
     list-style: none;
 }
 
-.contact__info-item:not(:last-child) {
+.footer__address-item:not(:last-child) {
     margin-bottom: 12px;
 }
 
@@ -21,8 +21,8 @@
     align-items: baseline;
 }
 
-.join__subtitle,
-.footer__form-text {
+.footer__social-text,
+.footer__subscribe-text {
     color: var(--white);
     font-weight: 700;
     letter-spacing: 0.42px;
@@ -31,7 +31,7 @@
     margin-bottom: 20px;
 }
 
-.footer__address {
+.footer__address-location {
     line-height: 114.29%;
     letter-spacing: 0.42px;
     color: var(--white);
@@ -41,12 +41,16 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__address:hover,
-.footer__address:focus {
+.footer__address-location:hover,
+.footer__address-location:focus {
     color: var(--brand-color);
 }
 
-.footer__tel {
+.footer__address-list {
+    font-style: normal;
+}
+
+.footer__address-tel {
     line-height: 114.29%;
     letter-spacing: 0.42px;
     color: rgba(255, 255, 255, 0.6);
@@ -56,12 +60,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__tel:hover,
-.footer__tel:focus {
+.footer__address-tel:hover,
+.footer__address-tel:focus {
     color: var(--brand-color);
 }
 
-.footer__mail {
+.footer__address-mail {
     line-height: 114.29%;
     letter-spacing: 0.42px;
     color: rgba(255, 255, 255, 0.6);
@@ -71,12 +75,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__mail:hover,
-.footer__mail:focus {
+.footer__address-mail:hover,
+.footer__address-mail:focus {
     color: var(--brand-color);
 }
 
-.logo__address {
+.footer__contacts {
     margin-right: 70px;
 }
 
@@ -93,22 +97,22 @@
     color: var(--white);
 }
 
-.footer__form {
+.footer__subscribe {
     flex-grow: 1;
     margin-left: 94px;
 }
 
-.form__subscribe {
+.footer__form {
     display: flex;
 }
 
-.form__subscribe input {
+.footer__form input {
     padding-left: 16px;
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
-.footer__input {
+.footer__form-input {
     flex-grow: 1;
     font-size: 16px;
     line-height: 125%;
@@ -122,12 +126,12 @@
     color: var(--white);
 }
 
-.footer__input:focus {
+.footer__form-input:focus {
     outline: 1px solid var(--brand-color);
 }
 
 
-.footer__subscribe-button {
+.footer__form-button {
     margin-left: 12px;
     font-weight: 700;
     font-size: 16px;
@@ -153,8 +157,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__subscribe-button:hover,
-.footer__subscribe-button:focus {
+.footer__form-button:hover,
+.footer__form-button:focus {
     background-color: var(--brand-color_hover);
 }
 

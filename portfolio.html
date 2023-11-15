@@ -23,7 +23,7 @@
     <!-- Хедер -->
     <header class="header">
       <div class="container header__container">
-        <a class="logo logo_header" href="./index.html">
+        <a class="logo header__logo" href="./index.html">
           <span class="web"> Web</span><span class="studio">Studio</span>
         </a>
         <nav class="header__nav">
@@ -33,11 +33,11 @@
             <li><a class="header__nav-link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header__contacts">
-          <li><a class="header__contacts-link" href="mailto:info@devstudio.com"><svg class="icon icon__mail">
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item"><a class="header__contacts-link" href="mailto:info@devstudio.com"><svg class="icon header__mail-icon">
             <use href="./images/svg/icons.svg#icon-envelope"></use>
           </svg>info@devstudio.com</a></li>
-          <li><a class="header__contacts-link" href="tel:+380961111111"><svg class="icon icon__phone">
+          <li class="header__contacts-item"><a class="header__contacts-link" href="tel:+380961111111"><svg class="icon header__tel-icon">
             <use href="./images/svg/icons.svg#icon-smartphone"></use>
           </svg>+38 096 111 11 11</a></li>
         </ul>
@@ -45,136 +45,136 @@
     </header>
     <!-- Основний вміст сторінки -->
     <main>
-      <section class="section menu">
+      <section class="filter">
         <div class="container">
           <h2 class="hide">Портфоліо</h2>
           <!-- Секція категорій -->
-          <ul class="menu__filter list">
-            <li class="menu__filter-item"><button type="button" class="menu__button">Усі</button></li>
-            <li class="menu__filter-item"><button type="button" class="menu__button">Веб-сайти</button></li>
-            <li class="menu__filter-item"><button type="button" class="menu__button">Додатки</button></li>
-            <li class="menu__filter-item"><button type="button" class="menu__button">Дизайн</button></li>
-            <li class="menu__filter-item"><button type="button" class="menu__button">Маркетинг</button></li>
+          <ul class="filter__list">
+            <li class="filter__item"><button type="button" class="filter__button">Усі</button></li>
+            <li class="filter__item"><button type="button" class="filter__button">Веб-сайти</button></li>
+            <li class="filter__item"><button type="button" class="filter__button">Додатки</button></li>
+            <li class="filter__item"><button type="button" class="filter__button">Дизайн</button></li>
+            <li class="filter__item"><button type="button" class="filter__button">Маркетинг</button></li>
           </ul>
           <!-- Проєкти -->
           <div class="projects">
             <ul class="projects__list">
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_1.jpg"
                     alt="Ноутбук із зображенням команди співробітників"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                      <h3 class="section__description">Технокряк</h3>
-                      <p class="section__text">Веб-сайт</p>
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                      <h3 class="projects__description-title">Технокряк</h3>
+                      <p class="projects__description-text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_2.jpg"
                     alt="Постер з гравцями баскетбольних команд New Orlean та Golden Star"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                    <h3 class="section__description">
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                    <h3 class="projects__description-title">
                       Постер New Orlean vs Golden Star
                     </h3>
-                    <p class="section__text">Дизайн</p>
+                    <p class="projects__description-text">Дизайн</p>
                   </div>
                 </a>
               </li>
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_3.jpg"
                     alt="Ресторан з морепродуктами Seafood"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                    <h3 class="section__description">Ресторан Seafood</h3>
-                    <p class="section__text">Додаток</p>
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                    <h3 class="projects__description-title">Ресторан Seafood</h3>
+                    <p class="projects__description-text">Додаток</p>
                   </div>
                 </a>
               </li>
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_4.jpg"
                     alt="Зображення навушників"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                    <h3 class="section__description">Проєкт Prime</h3>
-                    <p class="section__text">Маркетинг</p>
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                    <h3 class="projects__description-title">Проєкт Prime</h3>
+                    <p class="projects__description-text">Маркетинг</p>
                   </div>
                 </a>
               </li>
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_5.jpg"
                     alt="Зображення двох коробок"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                    <h3 class="section__description">Проєкт Boxes</h3>
-                    <p class="section__text">Додаток</p>
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                    <h3 class="projects__description-title">Проєкт Boxes</h3>
+                    <p class="projects__description-text">Додаток</p>
                   </div>
                 </a>
               </li>
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_6.jpg"
                     alt="Монітор з надписом Inspiration has no Borders"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                    <h3 class="section__description">Inspiration has no Borders</h3>
-                    <p class="section__text">Веб-сайт</p>
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                    <h3 class="projects__description-title">Inspiration has no Borders</h3>
+                    <p class="projects__description-text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_7.jpg"
                     alt="Зображення журналу видання Limited Edition"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                    <h3 class="section__description">Видання Limited Edition</h3>
-                    <p class="section__text">Дизайн</p>
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                    <h3 class="projects__description-title">Видання Limited Edition</h3>
+                    <p class="projects__description-text">Дизайн</p>
                   </div>
                 </a>
               </li>
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_8.jpg"
                     alt="Зображення лейблу"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                    <h3 class="section__description">Проєкт LAB</h3>
-                    <p class="section__text">Маркетинг</p>
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                    <h3 class="projects__description-title">Проєкт LAB</h3>
+                    <p class="projects__description-text">Маркетинг</p>
                   </div>
                 </a>
               </li>
               <li class="projects__item">
-                <a href="#"> <div class="project__img">
+                <a href="#"> <div class="projects__img">
                   <img
                     src="./images/proj_9.jpg"
                     alt="Ноутбук із зображенням сайту Growing Business"
                     width="370"
-                  /> <div class="text__section"> <p class="text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
-                  <div class="project__smth">
-                    <h3 class="section__description">Growing Business</h3>
-                    <p class="section__text">Додаток</p>
+                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                  <div class="projects__description">
+                    <h3 class="projects__description-title">Growing Business</h3>
+                    <p class="projects__description-text">Додаток</p>
                 </div>
                 </a>
               </li>

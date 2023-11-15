@@ -1,14 +1,14 @@
-.section__button,
-.menu__button {
+.projects__button,
+.filter__button {
     cursor: pointer;
 }
 
-.section__button {
+.projects__button {
     border: none;
     background-color: var(--white);
 }
 
-.section__description {
+.projects__description-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 200%;
@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-.section__text {
+.projects__description-text {
     font-size: 16px;
     line-height: 187.5%;
     letter-spacing: 0.48px;
@@ -53,16 +53,16 @@ a {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.project__smth {
+.projects__description {
     padding: 20px 24px;
 }
 
-.project__img {
+.projects__img {
     position: relative;
     overflow: hidden;
 }
 
-.text__section {
+.projects__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,16 +73,16 @@ a {
     transition-property: transform;
 }
 
-.projects__item:hover .text__section {
+.projects__item:hover .projects__overlay {
     transform: translateY(0);
 }
 
-.projects__item:focus .text__section {
+.projects__item:focus .projects__overlay {
     transform: translateY(0);
 }
 
 
-.text {
+.projects__overlay-text {
     font-size: 18px;
     line-height: 155.56%;
     letter-spacing: 0.54px;

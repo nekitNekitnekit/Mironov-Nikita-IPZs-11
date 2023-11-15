@@ -5,7 +5,7 @@
 
 .header__container,
 .header__nav-list,
-.header__contacts {
+.header__contacts-list {
     display: flex;
     align-items: center;
 }
@@ -40,29 +40,25 @@ ul {
     list-style: none;
 }
 
-.header__contacts {
+.header__contacts-list {
     font-style: normal;
     margin-left: auto;
     gap: 40px;
 }
 
-.header__contacts .icon {
+.header__contacts-list .icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.icon__mail {
+.header__mail-icon {
     width: 16px;
     height: 12px;
 }
 
-.icon__phone {
+.header__tel-icon {
     width: 10px;
     height: 16px;
-}
-
-.contact__info-list {
-    font-style: normal;
 }
 
 .header__contacts-link {

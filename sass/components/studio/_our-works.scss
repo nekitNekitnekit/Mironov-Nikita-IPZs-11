@@ -14,19 +14,18 @@
 
 }
 
-.work__foto {
+.works__item {
     position: relative;
     width: calc((100% - 60px) / 3);
 }
 
-.foto__description {
+.works__text {
     position: absolute;
     bottom: 0%;
     width: 100%;
     padding-top: 27px;
     padding-bottom: 27px;
-    background-color: var(--black_gray);
-    opacity: 0.8;
+    background-color: rgba(47, 48, 58, 0.80);
 
     font-weight: 700;
     text-align: center;
