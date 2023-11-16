@@ -1,11 +1,7 @@
-.footer {
+/*.footer {
     background-color: var(--black_gray);
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.footer__studio {
-    color: var(--white);
 }
 
 .footer__list {
@@ -177,4 +173,142 @@ a.footer__social-icon {
     height: 24px;
     margin-left: 10px;
     top: 12px;
-}
+}*/
+
+.footer {
+    background-color: var(--black_gray);
+    padding-top: 60px; 
+    padding-bottom: 60px;
+  
+    &__list {
+      list-style: none;
+    }
+  
+    &__address-item {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  
+    .container {
+      display: flex;
+      align-items: baseline;
+    }
+  
+    &__social-text,
+    &__subscribe-text {
+      color: var(--white);
+      font-weight: 700;
+      letter-spacing: 0.42px;
+      text-transform: uppercase; 
+      margin-bottom: 20px;
+    }
+  
+    &__address-location {
+      line-height: 114.29%;
+      letter-spacing: 0.42px;
+      color: var(--white);
+      @include transition(color);
+  
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+      }
+    }
+  
+    &__address-list {
+      font-style: normal;
+    }
+  
+    &__address-tel {
+      @extend .footer__address-location;
+      color: rgba(255, 255, 255, 0.6);
+  
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+      }
+    }
+  
+    &__address-mail {
+      @extend .footer__address-tel;
+    }
+  
+    &__contacts {
+      margin-right: 70px;
+    }
+  
+    &__social-list {
+      @extend .team__social-list;
+    }
+  
+    ul&__social-list {
+      padding: 0;
+    }
+  
+    &__social-list li {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  
+    &__social-icon {
+      @extend .team__social-icon;
+  
+      & a {
+        background-color: rgba(255, 255, 255, 0.10);
+        color: var(--white);
+      }
+    }
+  
+    &__subscribe {
+      flex-grow: 1;
+      margin-left: 94px; 
+    }
+  
+    &__form {
+      display: flex;
+  
+      input {
+        padding-left: 16px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+      }
+    }
+  
+    &__form-input {
+      flex-grow: 1;
+      font-size: 16px;
+      line-height: 125%;  
+      letter-spacing: 0.48px;
+      max-height: 50px;
+      border-radius: 4px;
+      background-color: rgba(33, 150, 243, 0.00);
+      border: 1px solid rgba(255, 255, 255, 0.30);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      color: var(--white);
+  
+      &:focus {
+        outline: 1px solid var(--brand-color);
+      }
+    }
+  
+    &__form-button {
+      margin-left: 12px;
+      @include button;
+      
+      &:hover,
+      &:focus {
+        background-color: var(--brand-color_hover);
+      }
+    }
+  
+    &__form-icon {
+      position: absolute;
+      fill: var(--white);
+      width: 24px;
+      height: 24px; 
+      margin-left: 10px;
+      top: 12px;
+    }
+  }

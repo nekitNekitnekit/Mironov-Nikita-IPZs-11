@@ -9,18 +9,28 @@
 }
 
 .header__logo {
+    @extend .logo;
     padding-top: 24px;
     padding-bottom: 25px;
+
+    &-web {
+        color: var(--brand-color);
+    }
+    
+    &-studio {
+        color: var(--black);
+    }
 }
 
 .footer__logo {
+    @extend .logo;
     margin-bottom: 28px;
-}
 
-.web {
-    color: var(--brand-color);
-}
-
-.studio {
-    color: var(--black);
+    &-web {
+        color: var(--brand-color);
+    }
+    
+    &-studio {
+        color: var(--white);
+    }
 }
