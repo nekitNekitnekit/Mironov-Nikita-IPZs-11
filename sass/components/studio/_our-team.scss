@@ -26,12 +26,12 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.member {
+.team__description {
     padding-top: 30px;
     padding-bottom: 16px
 }
 
-.team__specialist {
+.team__description-title {
     color: var(--black_lighter);
     text-align: center;
     font-size: 16px;
@@ -41,26 +41,26 @@
     margin-bottom: 10px;
 }
 
-.team__job-title {
+.team__description-text {
     color: var(--gray);
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.48px;
 }
 
-.social__networks {
+.team__social-list {
     display: flex;
     width: 100%;
     padding: 0 32px 30px;
     justify-content: space-between;
 }
 
-.social__networks li {
+.team__social-list li {
     width: 44px;
     height: 44px;
 }
 
-.social {
+.team__social-icon {
     display: flex;
     width: 100%;
     height: 100%;
@@ -76,8 +76,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a.social:hover,
-a.social:focus {
+a.team__social-icon:hover,
+a.team__social-icon:focus {
     background-color: var(--brand-color);
     color: var(--white);
     outline: none;

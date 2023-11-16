@@ -84,15 +84,23 @@
     margin-right: 70px;
 }
 
-.footer .social__networks {
-    padding: 0;
-}
+.footer__social-list {
+    @extend .team__social-list;
+  }
 
-.footer .social__networks li {
+  ul.footer__social-list {
+    padding: 0;
+  }
+
+.footer__social-list li:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer .social {
+.footer__social-icon {
+    @extend .team__social-icon;
+}
+
+a.footer__social-icon {
     background-color: rgba(255, 255, 255, 0.10);
     color: var(--white);
 }
