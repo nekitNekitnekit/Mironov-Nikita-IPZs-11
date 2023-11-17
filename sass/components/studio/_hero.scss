@@ -26,10 +26,5 @@
     &__button {
         @include button;
         padding: 10px 24px 10px 24px;
-    
-        &:hover,
-        &:focus {
-            background-color: var(--brand-color_hover);
-          }
     }
 }

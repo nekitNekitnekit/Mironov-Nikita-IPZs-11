@@ -27,31 +27,32 @@
     
     &__description {
         padding-top: 30px;
-        padding-bottom: 16px
+        padding-bottom: 16px;
+
+        &-title {
+            color: var(--black_lighter);
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.48px;
+            margin-bottom: 10px;
+        }
+
+        &-text {
+            color: var(--gray);
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 0.48px;
+        }
     }
-    
-    &__description-title {
-        color: var(--black_lighter);
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
-        letter-spacing: 0.48px;
-    
-        margin-bottom: 10px;
-    }
-    
-    &__description-text {
-        color: var(--gray);
-        text-align: center;
-        font-size: 16px;
-        letter-spacing: 0.48px;
-    }
-    
-    &__social-list {
-        @include social-list;
-    }
-    
-    &__social-icon {
-        @include social-icon;
+
+    &__social {
+        &-list {
+            @include social-list;
+        }
+
+        &-icon {
+            @include social-icon;
+        }
     }
 }
