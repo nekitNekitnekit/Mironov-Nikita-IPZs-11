@@ -1,0 +1,139 @@
+.footer {
+    background-color: var(--black_gray);
+    padding-top: 60px; 
+    padding-bottom: 60px;
+  
+    &__list {
+      list-style: none;
+    }
+  
+    .container {
+      display: flex;
+      align-items: baseline;
+    }
+  
+    &__social-text,
+    &__subscribe-text {
+      color: var(--white);
+      font-weight: 700;
+      letter-spacing: 0.42px;
+      text-transform: uppercase; 
+      margin-bottom: 20px;
+    }
+    
+    &__address {
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+
+      &-location {
+        line-height: 114.29%;
+        letter-spacing: 0.42px;
+        color: var(--white);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+          color: var(--brand-color);
+        }
+      }
+
+      &-list {
+        font-style: normal;
+      }
+
+      &-tel {
+        @extend .footer__address-location;
+        color: rgba(255, 255, 255, 0.6);
+    
+        &:hover,
+        &:focus {
+          color: var(--brand-color);
+        }
+      }
+
+      &-mail {
+        @extend .footer__address-tel;
+      }
+    }
+  
+    &__contacts {
+      margin-right: 70px;
+    }
+
+    &__social {
+      &-list {
+        @include social-list;
+        padding: 0;
+      }
+
+      &-list li {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+
+      &-icon {
+        @include social-icon;
+        background-color: rgba(255, 255, 255, 0.10);
+        color: var(--white);
+      }
+    }
+  
+    &__subscribe {
+      flex-grow: 1;
+      margin-left: 94px; 
+    }
+  
+    &__form {
+      display: flex;
+  
+      input {
+        padding-left: 16px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+      }
+
+      &-input {
+        flex-grow: 1;
+        font-size: 16px;
+        line-height: 125%;  
+        letter-spacing: 0.48px;
+        max-height: 50px;
+        border-radius: 4px;
+        background-color: rgba(33, 150, 243, 0.00);
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: var(--white);
+    
+        &:focus {
+          outline: 1px solid var(--brand-color);
+        }
+      }
+
+      &-button {
+        @include button;
+        display: inline;
+        align-items: center;
+        position: relative;
+        min-width: 200px;
+        margin-left: 12px;
+        padding-right: 28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      &-icon {
+        position: absolute;
+        fill: var(--white);
+        width: 24px;
+        height: 24px; 
+        margin-left: 10px;
+        top: 12px;
+      }
+    }
+  }
