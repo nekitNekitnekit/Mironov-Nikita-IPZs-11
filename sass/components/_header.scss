@@ -1,6 +1,15 @@
 .header {
     display: block;
     border-bottom: 1px solid var(--gray_border);
+  
+    &__container,
+    &__nav-list, 
+    &__contacts-list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__container {
 
     @include mq(tablet) {
       max-width: 768px;
@@ -11,12 +20,6 @@
       max-width: 1200px;
       padding: 0;
     }
-  
-    &__container,
-    &__nav-list, 
-    &__contacts-list {
-      display: flex;
-      align-items: center;
     }
 
     &__nav-list, 
