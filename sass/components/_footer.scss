@@ -10,8 +10,6 @@
     .container {
       max-width: 480px;
       text-align: center;
-      //display: flex;
-      //align-items: baseline;
 
       @include mq(tablet) {
         max-width: 768px;
@@ -75,20 +73,10 @@
       &-mail {
         @extend .footer__address-tel;
       }
-
-      /*@include mq(desktop) {
-        margin-right: 94px;
-      }*/
     }
   
     &__contacts {
       margin-bottom: 60px;
-      //margin-right: 70px;
-
-      /*@include mq(mobile) {
-        align-items: center;
-        justify-content: center;
-      }*/
     
       @include mq(tablet) {
         margin-right: 165px;
@@ -142,22 +130,11 @@
   
     &__subscribe {
       flex-grow: 1;
-      //margin-left: 94px;
-
-      /*@include mq(desktop) {
-        margin-left: 94px;
-      }*/
     }
   
     &__form {
       display: flex;
       flex-direction: column;
-
-      /*@include mq(tablet) {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      }*/
 
       @include mq(desktop) {
         flex-direction: row;
@@ -190,12 +167,6 @@
           outline: 1px solid var(--brand-color);
         }
 
-        /*@include mq(tablet) {
-          max-width: 450px;
-          flex-wrap: wrap;
-          justify-content: center;
-        }*/
-
         @include mq(desktop) {
           margin: 0px;
           max-width: 358px;
@@ -208,7 +179,6 @@
         align-items: center;
         position: relative;
         min-width: 200px;
-        //margin-left: 12px;
         padding-right: 28px;
         padding-top: 10px;
         padding-bottom: 10px;

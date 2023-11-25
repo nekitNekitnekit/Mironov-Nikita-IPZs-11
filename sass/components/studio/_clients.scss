@@ -27,8 +27,6 @@
             flex-wrap: wrap;
             justify-content: center;
             max-width: 768px;
-            //margin-left: auto;
-            //margin-right: auto;
           }
         
           @include mq(desktop) {
@@ -36,8 +34,6 @@
             align-items: center;
             justify-content: center;
             max-width: 1200px;
-            //margin-left: auto;
-            //margin-right: auto;
           }
     }
     
@@ -45,7 +41,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        //max-width: 170px;
         max-height: 92px;
     
         padding: 16px 32px;

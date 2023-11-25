@@ -1,19 +1,9 @@
 section.features {
     padding-top: 60px;
     padding-bottom: 60px;
-
     margin: auto;
 
-    /*@include mobile{
-        max-width: 480px;
-    }
-
-    @include tablet{
-       max-width: 768px;
-       
-    }*/
     @include mq(desktop){
-      //max-width: 1200px;
         padding-top: 94px;
         padding-bottom: 0px;
     
@@ -28,48 +18,19 @@ section.features {
         flex-wrap: wrap;
         gap: 30px;
         max-width: 480px;
-        //margin-left: auto;
-        //margin-right: auto;
-
-        /*@include tablet () {
-            flex-wrap: wrap;
-            gap: 30px;
-          }
-        
-          @include desktop () {
-            align-items: center;
-          }*/
 
           @include mq(tablet) {
             flex-wrap: wrap;
             justify-content: center;
             max-width: 768px;
-            //margin-left: auto;
-            //margin-right: auto;
           }
         
           @include mq(desktop) {
             flex-wrap: nowrap;
             justify-content: center;
             max-width: 1200px;
-            //margin-left: auto;
-            //margin-right: auto;
           }
         }
-
-    /*&__item:not(:last-child) {
-        @media screen and (max-width: ($width-tablet - 1px)) {
-            margin-bottom: $gap;
-        }
-    }  
-
-    @include tablet() {
-        @include grid(2);
-    }
-
-    @include desktop() {
-        @include grid(4);
-    }*/
 
     &__item {
         @include mq(mobile-only) {
@@ -101,16 +62,6 @@ section.features {
         @include mq(desktop) {
             text-align: start;
         }
-
-        /*@include mobile () {
-            text-align: center;
-          }*/
-
-        /*@include font-title(14px, 16px, $tt: uppercase);
-        
-        @media screen and (max-width: ($width-tablet - 1px)){
-            text-align: center;
-        }*/
     }
 
     &__text {
@@ -123,25 +74,6 @@ section.features {
         @include mq(desktop) {
             max-width: 270px;
         }
-
-        /*@include mobile () {
-            align-items: center;
-            margin-bottom: 30px;
-            &:last-child {
-              margin-bottom: 0;
-            }
-          }*/
-
-
-        /*@include tablet () {
-            flex-basis: calc((100% - 30px) / 2);
-          }
-          @include desktop () {
-            // width: 270px;
-            // margin-right: 30px;
-            flex-basis: calc((100% - 90px) / 4);
-          }*/
-        /*@include font($lh:24px);*/
     }
 
     &__icon {

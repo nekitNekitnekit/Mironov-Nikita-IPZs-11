@@ -1,34 +1,19 @@
 .filter {
     &__list {
         display: flex;
-        //justify-content: center;
         flex-wrap: wrap;
-        //gap: 8px;
-        //margin-bottom: 50px;
-        /*margin-left: auto;
-        margin-right: auto;
-        max-width: 480px;*/
-
         margin: -8px -4px;
-
         justify-content: flex-start;
-
         margin-bottom: 40px;
 
         @include mq(tablet) {
             justify-content: center;
             flex-wrap: nowrap;
             margin-bottom: 30px;
-            /*margin-left: auto;
-            margin-right: auto;
-            max-width: 768px;*/
         }
 
         @include mq(desktop) {
             margin-bottom: 50px;
-            /*margin-left: auto;
-            margin-right: auto;
-            max-width: 1200px;*/
         }
     }
 

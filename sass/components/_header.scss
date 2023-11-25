@@ -19,14 +19,6 @@
       align-items: center;
     }
 
-    /*&__container {
-      @include mq(mobile) {
-        display: flex;
-        justify-content: baseline;
-        align-items: center;
-      }
-    }*/
-
     &__nav-list, 
     &__contacts-list {
       @include mq(mobile){
