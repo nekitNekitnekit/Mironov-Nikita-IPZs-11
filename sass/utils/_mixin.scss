@@ -23,6 +23,7 @@
 
 @mixin social-list {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding-bottom: 24px;
     justify-content: center;
@@ -65,8 +66,6 @@
     $mobile: 480px;
     $tablet: 768px;
     $desktop: 1200px;
-    margin-left: auto;
-    margin-right: auto;
       
     @if $screen == mobile {
         @media screen and (min-width: $mobile) {

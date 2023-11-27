@@ -10,10 +10,24 @@ body.no-scroll {
   overflow: hidden;
 }
 body .container {
-  max-width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  body .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .container {
+    max-width: 1200px;
+  }
 }
 body section {
   padding-top: 60px;
@@ -88,14 +102,6 @@ li {
   display: block;
 }
 
-.header__logo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (max-width: 479px) {
   .header__logo {
     padding-top: 14px;
@@ -145,12 +151,6 @@ li {
 
 .footer__logo {
   margin-bottom: 28px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (max-width: 479px) {
   .footer__logo {
@@ -189,29 +189,33 @@ li {
 }
 .header__container, .header__nav-list, .header__contacts-list {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.header__container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 480px) {
+  .header .container {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .container {
+    max-width: 1200px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__container {
-    max-width: 768px;
     padding: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__container {
-    max-width: 1200px;
     padding: 0;
   }
-}
-.header__nav-list, .header__contacts-list {
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .header__nav-list, .header__contacts-list {
@@ -223,10 +227,6 @@ li {
     display: none;
   }
 }
-.header__nav {
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (min-width: 768px) {
   .header__nav {
     display: flex;
@@ -236,8 +236,6 @@ li {
 .header__nav-list {
   list-style: none;
   gap: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .header__nav-list {
@@ -268,10 +266,6 @@ li {
   height: 4px;
   border-radius: 2px;
   background-color: var(--brand-color);
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .header__nav-list .header__nav-link.active::after {
@@ -286,10 +280,6 @@ li {
 .header__contacts-list {
   font-style: normal;
   margin-left: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .header__contacts-list {
@@ -319,10 +309,6 @@ li {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .header__contacts-link {
@@ -361,12 +347,6 @@ li {
   background-color: transparent;
   z-index: 100;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (max-width: 479px) {
   .mobile_button {
@@ -429,10 +409,6 @@ li {
   transform: translateX(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .mobile {
@@ -534,24 +510,17 @@ li {
   list-style: none;
 }
 .footer .container {
-  max-width: 480px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .footer .container {
-    max-width: 768px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer .container {
-    max-width: 1200px;
     flex-wrap: nowrap;
     text-align: start;
     align-items: baseline;
@@ -589,44 +558,33 @@ li {
 }
 .footer__contacts {
   margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .footer__contacts {
-    margin-right: 165px;
-    margin-bottom: 60px;
+    flex-basis: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
+    flex-basis: content;
     margin-right: 94px;
     margin-bottom: 0px;
   }
 }
 .footer__social {
   margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 .footer__social-list {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding-bottom: 24px;
   justify-content: center;
   gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .footer__social-list {
@@ -647,16 +605,17 @@ li {
     padding: 0px;
   }
 }
-.footer__social-list li:not(:last-child) {
-  margin-right: 10px;
-}
 @media screen and (min-width: 768px) {
   .footer__social {
+    flex-basis: 50%;
     margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__social {
+    flex-basis: content;
     margin-right: 94px;
     margin-bottom: 0px;
   }
@@ -687,8 +646,6 @@ li {
 .footer__form {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
@@ -714,8 +671,6 @@ li {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--white);
   margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -753,11 +708,17 @@ li {
   max-height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 .footer__form-button:hover, .footer__form-button:focus {
   background-color: var(--brand-color_hover);
+}
+@media screen and (max-width: 245px) {
+  .footer__form-button {
+    width: 100%;
+    min-width: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__form-button {
@@ -774,6 +735,11 @@ li {
   margin-left: 10px;
   top: 12px;
 }
+@media screen and (max-width: 245px) {
+  .footer__form-icon {
+    display: none;
+  }
+}
 
 .hero {
   background-color: var(--black_gray);
@@ -782,12 +748,7 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 118px 0;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
@@ -799,8 +760,6 @@ li {
   .hero {
     padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768.jpg);
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -812,8 +771,6 @@ li {
   .hero {
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600.jpg);
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -898,8 +855,6 @@ li {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -945,12 +900,6 @@ li {
   letter-spacing: 0.6px;
   color: var(--black_lighter);
   margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .modal__window-title {
@@ -964,13 +913,11 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .modal__window-title {
-    max-width: 480px;
+    max-width: 448px;
   }
 }
 .modal__form-list {
   max-width: 370px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .modal__form-list {
@@ -1025,8 +972,6 @@ li {
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .modal__form-textarea {
@@ -1073,8 +1018,6 @@ li {
   color: var(--gray);
   cursor: pointer;
   margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .modal__form-checkbox {
@@ -1088,8 +1031,6 @@ li {
   letter-spacing: 0.36px;
   text-decoration-line: underline;
   color: var(--brand-color);
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .modal__form-link {
@@ -1120,6 +1061,13 @@ li {
 }
 .modal__form-submit:hover, .modal__form-submit:focus {
   background-color: var(--brand-color_hover);
+}
+@media screen and (max-width: 280px) {
+  .modal__form-submit {
+    width: 100%;
+    padding-right: 18.57%;
+    padding-left: 18.57%;
+  }
 }
 
 .check__icon {
@@ -1163,8 +1111,6 @@ section.features {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   section.features {
@@ -1179,44 +1125,37 @@ section.features {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .features__list {
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__list {
     flex-wrap: nowrap;
     justify-content: center;
-    max-width: 1200px;
   }
 }
-.features__item {
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 480px) {
+  .features__item {
+    max-width: 450px;
+    margin: 0px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__item {
     flex-basis: calc((100% - 60px) / 2);
     max-width: 354px;
+    margin: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
-    flex-basis: calc((100% - 90px) / 1);
+    flex-basis: calc((100% - 90px) / 4);
     max-width: 270px;
+    margin: 0px;
   }
 }
 .features__title {
@@ -1226,10 +1165,6 @@ section.features {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .features__title {
@@ -1246,8 +1181,6 @@ section.features {
   line-height: 171.43%;
   letter-spacing: 0.42px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .features__text {
@@ -1268,8 +1201,6 @@ section.features {
 
 .works {
   display: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .works {
@@ -1316,8 +1247,6 @@ section.features {
   letter-spacing: 0.84px;
   text-align: center;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -1332,17 +1261,11 @@ section.features {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .team__list {
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1350,19 +1273,12 @@ section.features {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
   }
 }
 .team__item {
   background-color: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .team__item {
@@ -1404,12 +1320,11 @@ section.features {
 }
 .team__social-list {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding-bottom: 24px;
   justify-content: center;
   gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .team__social-list {
@@ -1446,8 +1361,6 @@ section.features {
   font-weight: 700;
   letter-spacing: 0.84px;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
@@ -1463,10 +1376,6 @@ section.features {
   gap: 30px;
   flex-wrap: wrap;
   max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .clients__list {
@@ -1497,10 +1406,6 @@ section.features {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   flex-basis: calc((100% - 30px) / 3);
   min-width: 210px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 .clients__link:hover, .clients__link:focus {
   color: var(--brand-color);
@@ -1529,10 +1434,6 @@ section.features {
   margin: -8px -4px;
   justify-content: flex-start;
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .filter__list {
@@ -1571,14 +1472,6 @@ section.features {
   border-radius: 4px;
 }
 
-.filter .container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (min-width: 480px) {
   .filter .container {
     max-width: 480px;
@@ -1632,12 +1525,6 @@ section.features {
 .projects__item {
   background-color: var(--white);
   border: 1px solid #eeeeee;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1696,10 +1583,6 @@ section.features {
   color: var(--white);
   padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .projects__overlay-text {

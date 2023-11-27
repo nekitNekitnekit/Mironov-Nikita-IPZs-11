@@ -6,18 +6,29 @@
     &__nav-list, 
     &__contacts-list {
       display: flex;
+      justify-content: space-between;
       align-items: center;
+    }
+
+    .container {
+      @include mq(mobile) {
+        max-width: 100%;
+      }
+      @include mq(tablet) {
+        max-width: 768px;
+      }
+      @include mq(desktop) {
+        max-width: 1200px;
+      }
     }
 
     &__container {
 
     @include mq(tablet) {
-      max-width: 768px;
       padding: 0;
     }
 
     @include mq(desktop) {
-      max-width: 1200px;
       padding: 0;
     }
     }

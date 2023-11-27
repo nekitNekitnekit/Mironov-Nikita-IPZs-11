@@ -22,19 +22,16 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
-        max-width: 480px;
 
         @include mq(tablet) {
             flex-wrap: wrap;
             justify-content: center;
-            max-width: 768px;
           }
         
           @include mq(desktop) {
             flex-wrap: nowrap;
             align-items: center;
             justify-content: center;
-            max-width: 1200px;
           }
     }
     

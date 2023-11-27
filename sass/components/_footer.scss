@@ -8,18 +8,15 @@
     }
   
     .container {
-      max-width: 480px;
       text-align: center;
 
       @include mq(tablet) {
-        max-width: 768px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
       }
 
       @include mq(desktop) {
-        max-width: 1200px;
         flex-wrap: nowrap;
         text-align: start;
         align-items: baseline;
@@ -76,20 +73,24 @@
     }
   
     &__contacts {
+      //flex-basis: calc((100% - 60px)/2);
       margin-bottom: 60px;
     
       @include mq(tablet) {
-        margin-right: 165px;
-        margin-bottom: 60px;
+        flex-basis: 50%;
+        margin-left: 0px;
+        margin-right: 0px;
       }
     
       @include mq(desktop) {
+        flex-basis: content;
         margin-right: 94px;
         margin-bottom: 0px;
       }
     }
 
     &__social {
+      //flex-basis: calc((100% - 60px)/2);
       margin-bottom: 60px;
       &-list {
         @include social-list;
@@ -105,18 +106,15 @@
         }
       }
 
-      &-list li {
-        &:not(:last-child) {
-          margin-right: 10px;
-        }
-
-      }
-
       @include mq(tablet) {
+        flex-basis: 50%;
         margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
       }
 
       @include mq(desktop) {
+        flex-basis: content;
         margin-right: 94px;
         margin-bottom: 0px;
       }
@@ -186,6 +184,13 @@
         margin-left: auto;
         margin-right: auto;
 
+        @media screen and (max-width: 245px) {
+          width: 100%;
+          min-width: 0px;
+          padding-right: 0px;
+          padding-left: 0px;
+        }
+
         @include mq(desktop) {
           max-height: 50px;
           margin-left: 12px;
@@ -200,6 +205,10 @@
         height: 24px; 
         margin-left: 10px;
         top: 12px;
+
+        @media screen and (max-width: 245px) {
+          display: none;
+        }
       }
     }
   }

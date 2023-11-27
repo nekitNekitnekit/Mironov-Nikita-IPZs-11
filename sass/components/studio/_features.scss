@@ -6,7 +6,6 @@ section.features {
     @include mq(desktop){
         padding-top: 94px;
         padding-bottom: 0px;
-    
     }
 }
 
@@ -17,33 +16,33 @@ section.features {
         justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
-        max-width: 480px;
 
           @include mq(tablet) {
             flex-wrap: wrap;
             justify-content: center;
-            max-width: 768px;
           }
         
           @include mq(desktop) {
             flex-wrap: nowrap;
             justify-content: center;
-            max-width: 1200px;
           }
         }
 
     &__item {
-        @include mq(mobile-only) {
+        @include mq(mobile) {
             max-width: 450px;
+            margin: 0px;
         }
         @include mq(tablet) {
             flex-basis: calc((100% - 60px) / 2);
             max-width: 354px;
+            margin: 0px;
         }
 
         @include mq(desktop) {
-            flex-basis: calc((100% - 90px) / 1);
+            flex-basis: calc((100% - 90px) / 4);
             max-width: 270px;
+            margin: 0px;
         }
     }
 

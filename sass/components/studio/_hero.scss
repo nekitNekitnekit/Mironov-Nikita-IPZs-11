@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 118px 0;
 
     @include mq(retina) {
         padding: 118px 0;
@@ -41,6 +42,8 @@
         text-transform: uppercase;
         max-width: 360px;
         margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
 
         @include mq(desktop) {
             max-width: 696px;
