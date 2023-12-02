@@ -1,26 +1,57 @@
 .hero {
     background-color: var(--black_gray);
-    padding-top: 200px;
-    padding-bottom: 200px;
     text-align: center;
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/hero_bg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/hero/hero-480.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    padding: 118px 0;
+
+    @include mq(retina) {
+        padding: 118px 0;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero/hero-480@2.jpg);
+    }
+
+    @include mq(tablet) {
+        padding: 118px 0;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero/hero-768.jpg);
+        
+        @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero/hero-768@2.jpg);
+        }
+    }
+
+    @include mq(desktop) {
+        padding: 200px 0;
+        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero/hero-1600.jpg);
+        
+        @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero/hero-1600@2.jpg);
+        }
+    }
 
     &__title {
         color: var(--white);
         text-align: center;
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
-        line-height: 136.36%;
-        letter-spacing: 2.64px;
+        line-height: 161.54%;
+        letter-spacing: 1.56px;
         text-transform: uppercase;
-    
-        max-width: 696px;
+        max-width: 360px;
+        margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 30px;
+
+        @include mq(desktop) {
+            max-width: 696px;
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 136.36%;
+            letter-spacing: 2.64px;
+          }
     }
 
     &__button {

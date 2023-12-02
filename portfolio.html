@@ -3,6 +3,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/svg/favicon.svg" />
     <title>Портфоліо</title>
@@ -41,6 +42,55 @@
             <use href="./images/svg/icons.svg#icon-smartphone"></use>
           </svg>+38 096 111 11 11</a></li>
         </ul>
+        <button class="mobile_button" type="button" data-menu-button aria-expanded="false">
+          <svg class="mobile_button-icon">
+            <use class="mobile_button--close" href="./images/svg/icons.svg#icon-burger-close"></use>
+            <use class="mobile_button--open" href="./images/svg/icons.svg#icon-burger-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile" data-menu>
+        <nav class="mobile__nav">
+          <ul class="mobile__nav-list">
+            <li class="mobile__nav-item">
+              <a href="./index.html" class="mobile__nav-link">Студія</a>
+            </li>
+            <li class="mobile__nav-item">
+              <a href="./portfolio.html" class="mobile__nav-link active">Портфоліо</a>
+            </li>
+            <li class="mobile__nav-item">
+              <a href="" class="mobile__nav-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile__contacts-list">
+          <li class="mobile__contacts-item">
+            <a
+              class="mobile__contacts-link link mobile__contacts-link--blue"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile__contacts-item">
+            <a class="mobile__contacts-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile__social-list">
+          <li class="mobile__social-item">
+            <a class="mobile__social-link" href="">Instagram</a>
+          </li>
+          <li class="mobile__social-item">
+            <a class="mobile__social-link" href="">Twitter</a>
+          </li>
+          <li class="mobile__social-item">
+            <a class="mobile__social-link" href="">Facebook</a>
+          </li>
+          <li class="mobile__social-item">
+            <a class="mobile__social-link" href="">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- Основний вміст сторінки -->
@@ -61,11 +111,17 @@
             <ul class="projects__list">
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_1.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio1-technokryak-370.jpg 1x, ./images/portfolio/portfolio1-technokryak-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio1-technokryak-354.jpg 1x, ./images/portfolio/portfolio1-technokryak-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio1-technokryak-450.jpg 1x, ./images/portfolio/portfolio1-technokryak-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio1-technokryak-450.jpg"
                     alt="Ноутбук із зображенням команди співробітників"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                       <h3 class="projects__description-title">Технокряк</h3>
                       <p class="projects__description-text">Веб-сайт</p>
@@ -74,11 +130,17 @@
               </li>
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_2.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio2-neworlean-370.jpg 1x, ./images/portfolio/portfolio2-neworlean-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio2-neworlean-354.jpg 1x, ./images/portfolio/portfolio2-neworlean-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio2-neworlean-450.jpg 1x, ./images/portfolio/portfolio2-neworlean-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio2-neworlean-450.jpg"
                     alt="Постер з гравцями баскетбольних команд New Orlean та Golden Star"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                     <h3 class="projects__description-title">
                       Постер New Orlean vs Golden Star
@@ -89,11 +151,17 @@
               </li>
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_3.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio3-seafood-370.jpg 1x, ./images/portfolio/portfolio3-seafood-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio3-seafood-354.jpg 1x, ./images/portfolio/portfolio3-seafood-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio3-seafood-450.jpg 1x, ./images/portfolio/portfolio3-seafood-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio3-seafood-450.jpg"
                     alt="Ресторан з морепродуктами Seafood"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                     <h3 class="projects__description-title">Ресторан Seafood</h3>
                     <p class="projects__description-text">Додаток</p>
@@ -102,11 +170,17 @@
               </li>
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_4.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio4-prime-370.jpg 1x, ./images/portfolio/portfolio4-prime-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio4-prime-354.jpg 1x, ./images/portfolio/portfolio4-prime-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio4-prime-450.jpg 1x, ./images/portfolio/portfolio4-prime-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio4-prime-450.jpg"
                     alt="Зображення навушників"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                     <h3 class="projects__description-title">Проєкт Prime</h3>
                     <p class="projects__description-text">Маркетинг</p>
@@ -115,11 +189,17 @@
               </li>
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_5.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio5-boxes-370.jpg 1x, ./images/portfolio/portfolio5-boxes-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio5-boxes-354.jpg 1x, ./images/portfolio/portfolio5-boxes-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio5-boxes-450.jpg 1x, ./images/portfolio/portfolio5-boxes-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio5-boxes-450.jpg"
                     alt="Зображення двох коробок"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                     <h3 class="projects__description-title">Проєкт Boxes</h3>
                     <p class="projects__description-text">Додаток</p>
@@ -128,11 +208,17 @@
               </li>
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_6.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio6-inspiration-370.jpg 1x, ./images/portfolio/portfolio6-inspiration-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio6-inspiration-354.jpg 1x, ./images/portfolio/portfolio6-inspiration-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio6-inspiration-450.jpg 1x, ./images/portfolio/portfolio6-inspiration-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio6-inspiration-450.jpg"
                     alt="Монітор з надписом Inspiration has no Borders"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                     <h3 class="projects__description-title">Inspiration has no Borders</h3>
                     <p class="projects__description-text">Веб-сайт</p>
@@ -141,11 +227,17 @@
               </li>
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_7.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio7-limited-370.jpg 1x, ./images/portfolio/portfolio7-limited-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio7-limited-354.jpg 1x, ./images/portfolio/portfolio7-limited-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio7-limited-450.jpg 1x, ./images/portfolio/portfolio7-limited-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio7-limited-450.jpg"
                     alt="Зображення журналу видання Limited Edition"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                     <h3 class="projects__description-title">Видання Limited Edition</h3>
                     <p class="projects__description-text">Дизайн</p>
@@ -154,11 +246,17 @@
               </li>
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_8.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio8-lab-370.jpg 1x, ./images/portfolio/portfolio8-lab-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio8-lab-354.jpg 1x, ./images/portfolio/portfolio8-lab-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio8-lab-450.jpg 1x, ./images/portfolio/portfolio8-lab-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio8-lab-450.jpg"
                     alt="Зображення лейблу"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                     <h3 class="projects__description-title">Проєкт LAB</h3>
                     <p class="projects__description-text">Маркетинг</p>
@@ -167,11 +265,17 @@
               </li>
               <li class="projects__item">
                 <a href="#"> <div class="projects__img">
-                  <img
-                    src="./images/proj_9.jpg"
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio9-growing-370.jpg 1x, ./images/portfolio/portfolio9-growing-370@2.jpg 2x"
+                      media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                    <source srcset="./images/portfolio/portfolio9-growing-354.jpg 1x, ./images/portfolio/portfolio9-growing-354@2.jpg 2x"
+                      media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                    <img srcset="./images/portfolio/portfolio9-growing-450.jpg 1x, ./images/portfolio/portfolio9-growing-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio9-growing-450.jpg"
                     alt="Ноутбук із зображенням сайту Growing Business"
-                    width="370"
-                  /> <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
+                    width="450" height="294"/>
+                  </picture>
+                  <div class="projects__overlay"> <p class="projects__overlay-text" > Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> </div>
                   <div class="projects__description">
                     <h3 class="projects__description-title">Growing Business</h3>
                     <p class="projects__description-text">Додаток</p>
@@ -254,5 +358,8 @@
          </div>
       </div>
     </footer>
+
+    <script src="./js/filter.js"></script>
+    <script src="./js/mobile-nav.js"></script>
   </body>
 </html>

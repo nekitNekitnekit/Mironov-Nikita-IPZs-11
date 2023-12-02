@@ -1,4 +1,9 @@
 .works {
+    display: none;
+    @include mq(desktop) {
+        display: block;
+      }
+
     &__title {
         color: var(--black_lighter);
         font-size: 36px;

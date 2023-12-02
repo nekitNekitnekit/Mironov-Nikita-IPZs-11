@@ -2,10 +2,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
-    min-width: 528px;
-    min-height: 581px;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    max-width: 450px;
+    min-height: 609px;
     background-color: var(--white);
     opacity: 1;
     border-radius: 4px;
@@ -13,6 +13,11 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mq(desktop) {
+        min-width: 528px;
+        min-height: 581px;
+      }
 
     &__button {
         display: flex;
@@ -58,12 +63,28 @@
         letter-spacing: 0.6px;
         color: var(--black_lighter);
         margin-bottom: 12px;
+
+        @include mq(mobile) {
+            max-width: 370px;
+          }
+
+        @include mq(tablet) {
+            max-width: 370px;
+          }
+
+        @include mq(desktop) {
+            max-width: 448px;
+          }
         }
     }
 
     &__form {
         &-list {
-            max-width: 448px;
+            max-width: 370px;
+
+            @include mq(desktop) {
+                max-width: 448px;
+              }
         }
 
         &-item {
@@ -118,13 +139,18 @@
         &-textarea {
             resize: none;
             min-height: 120px;
-            min-width: 448px;
+            width: 100%;
+            max-width: 370px;
             border-radius: 4px;
             border: 1px solid rgba(33, 33, 33, 0.2);
       
             transition-property: outline;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            @include mq(desktop) {
+                min-width: 448px;
+              }
       
             &:focus {
               outline: 1px solid var(--brand-color);
@@ -152,47 +178,33 @@
         }
 
         &-checkbox {
-            margin-top: 20px;
-        }
-
-        &--argee {
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 12px;
             line-height: 171.43%;
-            letter-spacing: 0.42px;
+            letter-spacing: 0.36px;
             color: var(--gray);
             cursor: pointer;
+            margin-top: 20px;
 
-            span {
-                display: flex;
-                width: 16px;
-                height: 15px;
-                border: 2px solid var(--black);
-                border-radius: 2px;
-                margin-right: 8px;
-                fill: transparent;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            }
-        }
-
-        &--check:checked + &--argee {
-            span {
-                background-color: var(--brand-color);
-                border: none;
-                fill: var(--white);
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include mq(desktop) {
+                font-size: inherit;
+                letter-spacing: 0.42px;
             }
         }
 
         &-link {
+            font-size: 12px;
             line-height: 171.43%;
-            letter-spacing: 0.42px;
+            letter-spacing: 0.36px;
             text-decoration-line: underline;
             color: var(--brand-color);
-            margin-left: 5px;
+
+            @include mq(desktop) {
+                font-size: inherit;
+                letter-spacing: 0.42px;
+              }
         }
 
         &-submit {
@@ -202,6 +214,12 @@
             margin-right: auto;
             padding: 10px 52px 10px 52px;
             margin-top: 30px;
+
+            @media screen and (max-width: 280px) {
+              width: 100%;
+              padding-right: 18.57%;
+              padding-left: 18.57%;
+            }
         }
     }
 }
@@ -210,3 +228,35 @@
     width: 16px;
     height: 15px;
 }
+  
+  .checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .check {
+    display: flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--black);
+    border-radius: 2px;
+    margin-right: 8px;
+    fill: transparent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .checkbox:checked + .check {
+    background-color: var(--brand-color);
+    border: none;
+    fill: var(--white);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }

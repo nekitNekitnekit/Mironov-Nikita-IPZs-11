@@ -3,15 +3,47 @@
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-
     display: block;
-    margin-right: 93px;
 }
 
 .header__logo {
     @extend .logo;
-    padding-top: 24px;
-    padding-bottom: 25px;
+
+    @media screen and (max-width: 479px) {
+        padding-top: 14px;
+        padding-bottom: 15px;
+        font-size: 24px;
+        letter-spacing: .72px;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+
+    @include mq(mobile) {
+        padding-top: 14px;
+        padding-bottom: 15px;
+        font-size: 24px;
+        letter-spacing: .72px;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+
+    @include mq(tablet) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        font-size: 24px;
+        letter-spacing: .72px;
+        margin-right: 88px;
+        margin-left: 0px;
+      }
+    
+      @include mq(desktop) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        font-size: 26px;
+        letter-spacing: .78px;
+        margin-right: 93px;
+        margin-left: 0px;
+      }
 
     &-web {
         color: var(--brand-color);
@@ -25,6 +57,26 @@
 .footer__logo {
     @extend .logo;
     margin-bottom: 28px;
+
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+        letter-spacing: .72px;
+      }
+
+    @include mq(mobile) {
+        font-size: 24px;
+        letter-spacing: .72px;
+      }
+
+    @include mq(tablet) {
+        font-size: 24px;
+        letter-spacing: .72px;
+      }
+    
+      @include mq(desktop) {
+        font-size: 26px;
+        letter-spacing: .78px;
+      }
 
     &-web {
         color: var(--brand-color);
